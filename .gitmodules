@@ -1,0 +1,4 @@
+[submodule "upstream"]
+	path = upstream
+	url = https://github.com/exoscale/terraform-provider-exoscale.git
+	ignore = dirty

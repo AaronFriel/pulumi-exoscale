@@ -1,0 +1,2 @@
+github.com/pulumi/pulumi/pkg/v3 v3.71.0/go.mod h1:U4IvxPAIezAbJwwyGl2faq09XC0BP3RxQbwZmBYy6fM=
+github.com/stretchr/testify v1.8.4/go.mod h1:sz/lmYIOXD/1dqDmKjjqLyZ2RngseejIcXlSw2iwfAo=

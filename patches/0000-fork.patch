@@ -1,0 +1,32 @@
+diff --git a/pulumi-shim/pf.go b/pulumi-shim/pf.go
+new file mode 100644
+index 00000000..55367384
+--- /dev/null
++++ b/pulumi-shim/pf.go
+@@ -0,0 +1,10 @@
++package shim
++
++import (
++	pf "github.com/hashicorp/terraform-plugin-framework/provider"
++	"github.com/exoscale/terraform-provider-exoscale/pkg/provider"
++)
++
++func PFProvider() pf.Provider {
++	return provider.Provider()()
++}
+diff --git a/pulumi-shim/sdk-v2.go b/pulumi-shim/sdk-v2.go
+new file mode 100644
+index 00000000..fbe04351
+--- /dev/null
++++ b/pulumi-shim/sdk-v2.go
+@@ -0,0 +1,10 @@
++package shim
++
++import (
++	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
++	"github.com/exoscale/terraform-provider-exoscale/exoscale"
++)
++
++func SDKProvider() *schema.Provider {
++	return exoscale.Provider()
++}
