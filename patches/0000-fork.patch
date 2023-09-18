@@ -12,7 +12,7 @@ index 00000000..55367384
 +)
 +
 +func PFProvider() pf.Provider {
-+	return provider.Provider()()
++	return provider.New()()
 +}
 diff --git a/pulumi-shim/sdk-v2.go b/pulumi-shim/sdk-v2.go
 new file mode 100644
